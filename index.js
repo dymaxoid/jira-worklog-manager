@@ -38,6 +38,14 @@ program
   .option('--prev-month', 'list work logs of the previous month')
   .action(options => run('worklogs', options))
 
+program
+  .command('read')
+  .option('-d, --date [date]', 'optional worklog date (DD/MM/YYYY), defaults to current date')
+  .option('-i, --issue [issue]', 'issue identifier')
+  .option('--week', 'display work logs of the current week')
+  .option('--month', 'display work logs of the current month')
+  .action(options => run('read', options))
+
 program.parse(process.argv)
 
 if (!program.args.length) program.outputHelp()

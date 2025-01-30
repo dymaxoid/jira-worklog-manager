@@ -100,5 +100,19 @@ Options:
   --week             list work logs of the current week
   --month            list work logs of the current month
   -h, --help         output usage information
+```
 
+### Read worklogs in text format
+
+Retreive the full text of worklogs
+
+```
+Usage: jira-worklog-manager read [options]
+
+Options:
+  -d, --date [date]  optional worklog date (DD/MM/YYYY), defaults to current date
+  --week             list work logs of the current week
+  --month            list work logs of the current month
+  -i, --issue        issue identifier
+  -h, --help         output usage information
 ``` 
